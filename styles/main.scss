@@ -1,0 +1,55 @@
+@import './shared/colors';
+@import './shared/mixins';
+
+// PAGES
+@import './index';
+@import './portfolios';
+@import './blogs';
+@import './about';
+@import './cv';
+
+// COMPONENTS
+@import './header';
+@import './slate-editor';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.self-typed {
+  font-size: 31px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #57ef8f;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.error {
+  font-weight: 700;
+  color: red;
+}
+
+.base-page {
+  padding: 150px 0 100px 0;
+  color: black;
+  background-color: #ecedee;
+  min-height: 100vh;
+
+  .page-header {
+    .page-header-title {
+      font-weight: 700;
+      color: black;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+}
