@@ -3,7 +3,7 @@ const Portfolio = require('../models/portfolio');
 exports.getPortfolios = (req, res) => {
 
   Portfolio.find({})
-           .sort({'startDate': 1})
+           .sort({'startDate': -1})
            .exec((err, allPortfolios) => {
     if (err) {
       return res.status(422).send(err);
